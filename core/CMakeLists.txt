@@ -81,6 +81,7 @@ set (COMMON_FILES
     src/ZXContainerAlgorithms.h
     src/ZXStrConvWorkaround.h
     src/ZXTestSupport.h
+    src/DecodePDF417.cpp
 )
 if (ENABLE_DECODERS)
     set (COMMON_FILES ${COMMON_FILES}
@@ -446,8 +447,8 @@ source_group (Sources\\textcodec FILES ${TEXT_CODEC_FILES})
 
 find_package (Threads)
 
-add_library (ZXingCore
-    ${COMMON_FILES}
+add_library (ZXingCore SHARED
+    ${COMMON_FILES} 
     ${AZTEC_FILES}
     ${DATAMATRIX_FILES}
     ${MAXICODE_FILES}

@@ -35,7 +35,8 @@ COMMON_FILES :=	\
 	src/TextDecoder.cpp \
 	src/TextUtfEncoding.cpp \
 	src/WhiteRectDetector.cpp \
-	src/ZXBigInteger.cpp
+	src/ZXBigInteger.cpp \
+	src/DecodePDF417.cpp
 
 AZTEC_FILES := \
 	src/aztec/AZDecoder.cpp \

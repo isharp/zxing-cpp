@@ -17,8 +17,6 @@
 #include "BarcodeFormat.h"
 #include "CharacterSet.h"
 
-namespace ZXing {
-
 class BitMatrix;
 
 /**
